@@ -1,0 +1,59 @@
+.Main .container {
+  display: flex;
+  width: 100vw;
+}
+
+.Main .container .outlet {
+  flex-grow: 3;
+  padding: 2rem;
+  background-color: #fff5f8;
+  border-radius: 10px;
+}
+
+.Main .container .navigation {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  background-color: rgba(244, 143, 177, 0.9);
+  color: #fff;
+  width: 200px;
+  border-right: 3px solid #f48fb1;
+  padding-top: 40px;
+  z-index: 1000;
+  transition: background-color 0.3s;
+  border-radius: 0 10px 10px 0;
+}
+
+.Main .container .navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Main .container .navigation ul li {
+  padding: 12px 20px;
+  transition: background 0.3s ease;
+}
+
+.Main .container .navigation ul li.active,
+.Main .container .navigation ul li:hover {
+  background: #f06292;
+}
+
+.Main .container .navigation ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.Main .container .navigation ul li.logout {
+  cursor: pointer;
+  margin-top: auto;
+  color: #f50057;
+}
+
+.Main .container .navigation ul li.logout:hover {
+  background-color: #f06292;
+}

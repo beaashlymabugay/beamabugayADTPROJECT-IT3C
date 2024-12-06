@@ -1,0 +1,121 @@
+.Login {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 192, 203, 0.6),
+    rgba(255, 182, 193, 0.6)
+  ),
+  url(sak.jpg); /* Sakura background image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.main-container {
+  width: 340px;
+  border-radius: 1rem; /* Rounded corners */
+  background-color: rgba(255, 255, 255, 0.85); /* Slight white transparency */
+  padding: 2.5rem;
+  color: #b71c1c; /* Subtle, deeper red for contrast */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Soft shadow for contrast */
+}
+
+.main-container h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #e91e63; /* Vibrant pink */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  color: #d32f2f; /* Rich red for labels */
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 1rem;
+  font-size: 1rem;
+  background: #f8bbd0; /* Soft pink background for inputs */
+  color: #880e4f; /* Dark pink text for contrast */
+  border: 1px solid #f48fb1; /* Light pink border */
+  border-radius: 8px; /* Rounded input borders */
+  outline: none;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-group input:focus {
+  border-color: #f50057; /* Focus border in vibrant pink */
+  box-shadow: 0 0 8px rgba(245, 0, 87, 0.6); /* Light pink glow on focus */
+}
+
+.show-password {
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #f50057; /* Vibrant pink for the "Show Password" toggle */
+  text-align: right;
+  margin-top: -0.5rem;
+}
+
+.show-password:hover {
+  text-decoration: underline;
+}
+
+.submit-container {
+  margin-top: 1.5rem;
+}
+
+.btn-primary {
+  display: block;
+  width: 100%;
+  background-color: #f06292; /* Light pink button */
+  padding: 0.9rem;
+  text-align: center;
+  color: #fff;
+  border: none;
+  font-size: 1.15rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #e91e63; /* Darker pink on hover */
+}
+
+.register-container {
+  grid-column: span 2;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: #ad1457; /* Deep pink for the register message */
+  text-align: center;
+}
+
+.register-container a {
+  color: #d81b60; /* Soft bright pink for links */
+  text-decoration: none;
+}
+
+.register-container a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,321 @@
+.body {
+  width: 400px;
+}
+
+.searched-movie {
+  max-height: 200px;
+  overflow-y: hidden;
+}
+
+.search-container {
+  margin-bottom: 10px;
+}
+
+.search-container p:hover {
+  background-color: lightblue;
+}
+
+.container {
+  width: 70%;
+}
+
+.movie-details {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.poster-image {
+  width: 200px;
+  height: 400px;
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.search {
+  background-color: #ff80ab; /* Soft pink for the search button */
+  height: 35px;
+  border-radius: 30px; /* Rounded corners for a softer look */
+  color: white;
+  padding: 8px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.search:hover {
+  background-color: #ff4081; /* Lighter pink on hover */
+  transform: scale(1.05);
+}
+
+.search:active {
+  transform: scale(1);
+}
+
+.form-fields {
+  flex: 1;
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.field input,
+.field textarea {
+  width: 70.3vw;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.field textarea {
+  resize: vertical;
+}
+
+.field input:disabled,
+.field textarea:disabled {
+  background-color: #f5f5f5;
+}
+
+.videos, .cast {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.video-item, .cast-item {
+  flex: 1 1 300px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.video-item iframe {
+  width: 100%;
+  height: 200px;
+}
+
+/* Updated design for the cast section */
+.cast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 180px; /* Adjust width for better spacing */
+  padding: 10px;
+  border-radius: 12px; /* Soft rounded corners */
+  background-color: #f8f8f8; /* Light background for cast items */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  transition: transform 0.3s, box-shadow 0.3s ease;
+}
+
+.cast-item img {
+  border-radius: 50%;
+  width: 120px; /* Larger cast image */
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.cast-item h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; /* Dark text for visibility */
+  margin-bottom: 5px;
+}
+
+.cast-item p {
+  font-size: 14px;
+  color: #777; /* Lighter text for description */
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.cast-item:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+.btn-save {
+  display: block;
+  width: 85.5vw;
+  background-color: #ff80ab; /* Light pink */
+  padding: 0.75rem;
+  text-align: center;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-top: 10px;
+  border-radius: 30px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease-in-out;
+}
+
+.btn-save:hover {
+  background-color: #ff4081; /* Slightly darker pink */
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 64, 129, 0.3); /* Soft glowing effect */
+}
+
+.btn-save:active {
+  transform: scale(1);
+}
+
+.cancel {
+  display: block;
+  width: 85.5vw;
+  background-color: rgba(238, 130, 238, 0.753); /* Bold red-pink */
+  padding: 0.75rem;
+  text-align: center;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-top: 10px;
+  border-radius: 30px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease-in-out;
+}
+
+.cancel:hover {
+  background-color: rgba(238, 130, 238, 0.205); /* Lighter red-pink on hover */
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(244, 6, 18, 0.3); /* Soft glowing effect */
+}
+
+.cancel:active {
+  transform: scale(1);
+}
+
+.pagination-button {
+  background-color: #ff80ab; /* Light pink for pagination */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  width: 100px;
+  margin-top: 8px;
+  margin-inline: 5px;
+  border-radius: 30px; /* Rounded corners */
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background-color: #ff4081; /* Lighter pink on hover */
+  transform: scale(1.05);
+}
+
+.pagination-button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+.photos-section {
+  margin-top: 20px;
+}
+
+.photos-grid {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.movie-photo {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.cast-crew {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.cast-crew h2,
+.photo-gallery h2,
+.video-gallery h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #f5f5f5;
+}
+
+.cast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.cast-item {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.cast-photo-container {
+  position: relative;
+}
+
+.cast-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.cast-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.3rem;
+  border-radius: 0 0 5px 5px;
+}
+
+.inp {
+  width: 90%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.photo-gallery {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.photo-item {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.video-gallery {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.video-gallery iframe {
+  margin: 0.5rem;
+  border-radius: 8px;
+}
+
+

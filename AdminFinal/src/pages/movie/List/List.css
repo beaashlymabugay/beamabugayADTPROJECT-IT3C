@@ -1,0 +1,101 @@
+.lists-container {
+  width: 100%;
+  display: flex;
+  color: #000000;
+  flex-direction: column;
+}
+
+.create-container {
+  align-self: flex-end;
+  margin: 1rem 0;
+}
+
+.table-container,
+.movie-lists {
+  width: 100%;
+}
+
+.table-container {
+  text-align: center;
+}
+
+button {
+  width: 80px;
+  color: white;
+  margin-left: 5px;
+  padding: 8px;
+  border: none;
+  border-radius: 50px; /* More rounded corners for a softer look */
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease, box-shadow 0.3s ease-in-out;
+}
+
+/* Delete button: Red with a soft pink touch */
+.delete {
+  background-color: #f06292; /* Soft pink-red color */
+}
+
+.delete:hover {
+  background-color: #f50057; /* Lighter pink */
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 0, 87, 0.2); /* Pink glow effect on hover */
+}
+
+.delete:active {
+  transform: scale(1);
+}
+
+/* Edit button: Sweet peachy-orange */
+.edit {
+  background-color: #ffb3b3; /* Light peachy pink */
+}
+
+.edit:hover {
+  background-color: #ff80ab; /* Lighter pink */
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.2); /* Soft pink glow on hover */
+}
+
+.edit:active {
+  transform: scale(1);
+}
+
+.edit:disabled {
+  background-color: #f8c8c8;
+  cursor: not-allowed;
+}
+
+/* Create button: Light pink with playful hover effect */
+.create {
+  background-color: #ff80ab; /* Light pink color */
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  width: 160px;
+  width: 200px;
+  margin-right: 80px;
+  border-radius: 50px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s ease-in-out;
+}
+
+.create:hover {
+  background-color: #ff4081; /* Slightly darker pink */
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 64, 129, 0.3); /* Subtle glowing effect */
+}
+
+.create:active {
+  transform: scale(1);
+}
+
+.create:disabled {
+  background-color: #ffb3b3;
+  cursor: not-allowed;
+}
+
+.tile-cell {
+  text-align: justify;
+}
